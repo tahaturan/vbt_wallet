@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vbt_staj_ornek_app/constants/app_constants.dart';
 import 'package:vbt_staj_ornek_app/widgets/icon_widget.dart';
 
 class IconWidgetView extends StatelessWidget {
@@ -12,7 +13,7 @@ class IconWidgetView extends StatelessWidget {
       children: [
         IconWidget(
           title: "Send",
-          color: const Color(0XFF17334E),
+          color: ApplicationConstants.iconWidgetColor,
           delayananimation: 1.5,
           child: IconButton(
             onPressed: () {},
@@ -24,7 +25,7 @@ class IconWidgetView extends StatelessWidget {
         ),
         IconWidget(
           title: "Pay",
-          color: const Color(0XFF17334E),
+          color: ApplicationConstants.iconWidgetColor,
           delayananimation: 1.5,
           child: IconButton(
             onPressed: () {},
@@ -36,7 +37,7 @@ class IconWidgetView extends StatelessWidget {
         ),
         IconWidget(
           title: "Withdraw",
-          color: const Color(0XFF17334E),
+          color: ApplicationConstants.iconWidgetColor,
           delayananimation: 1.5,
           child: IconButton(
             onPressed: () {},
@@ -48,7 +49,7 @@ class IconWidgetView extends StatelessWidget {
         ),
         IconWidget(
           title: "Bill",
-          color: const Color(0XFF17334E),
+          color: ApplicationConstants.iconWidgetColor,
           delayananimation: 1.5,
           child: IconButton(
             onPressed: () {},
@@ -60,7 +61,7 @@ class IconWidgetView extends StatelessWidget {
         ),
         IconWidget(
           title: "Voucher",
-          color: const Color(0XFF17334E),
+          color: ApplicationConstants.iconWidgetColor,
           delayananimation: 1.5,
           child: IconButton(
             onPressed: () {},

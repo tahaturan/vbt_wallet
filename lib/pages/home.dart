@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vbt_staj_ornek_app/constants/app_constants.dart';
 import 'package:vbt_staj_ornek_app/widgets/appbar_action_view.dart';
 import 'package:vbt_staj_ornek_app/widgets/icon_witget_view.dart';
 
@@ -13,9 +14,9 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF181B2A),
+      backgroundColor: ApplicationConstants.primaryBackroudColor,
       appBar: AppBar(
-        backgroundColor: const Color(0xFF181B2A),
+        backgroundColor: ApplicationConstants.primaryBackroudColor,
         elevation: 0,
         actions: const [
           AppBarActionsView(),
