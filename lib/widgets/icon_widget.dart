@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vbt_staj_ornek_app/constants/app_constants.dart';
 
 class IconWidget extends StatelessWidget {
   final String title;
@@ -17,16 +18,19 @@ class IconWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
-          width: 60,
-          height: 60,
-          decoration: BoxDecoration(
-            color: color,
-            borderRadius: BorderRadius.circular(40),
+        InkWell(
+          onTap: () {},
+          child: Container(
+            width: 60,
+            height: 60,
+            decoration: BoxDecoration(
+              color: color,
+              borderRadius: BorderRadius.circular(40),
+            ),
+            child: child,
           ),
-          child: child,
         ),
-        SizedBox(height: MediaQuery.of(context).size.height * 0.01),
+        SizedBox(height: ApplicationConstants.sizeHeight(context, 0.01)),
         Text(
           title,
           style: const TextStyle(color: Colors.grey),

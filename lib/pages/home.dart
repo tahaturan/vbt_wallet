@@ -14,9 +14,9 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ApplicationConstants.primaryBackroudColor,
+      backgroundColor: ApplicationConstants.primaryBackgroudColor,
       appBar: AppBar(
-        backgroundColor: ApplicationConstants.primaryBackroudColor,
+        backgroundColor: ApplicationConstants.primaryBackgroudColor,
         elevation: 0,
         actions: const [
           AppBarActionsView(),
@@ -30,6 +30,7 @@ class _HomeState extends State<Home> {
             child: Column(
               children: const [
                 //? Karlar Listesi
+                //*Icon Widget
                 IconWidgetView()
               ],
             ),
