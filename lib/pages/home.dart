@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vbt_staj_ornek_app/constants/app_constants.dart';
 import 'package:vbt_staj_ornek_app/widgets/appbar_action_view.dart';
+import 'package:vbt_staj_ornek_app/widgets/bottom_nav_bar.dart';
 import 'package:vbt_staj_ornek_app/widgets/history_wallet.dart';
 import 'package:vbt_staj_ornek_app/widgets/icon_witget_view.dart';
 
@@ -58,6 +59,7 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
+      bottomNavigationBar: const MyBottomNavBar(),
     );
   }
 }
