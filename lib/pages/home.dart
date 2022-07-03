@@ -5,6 +5,7 @@ import 'package:vbt_staj_ornek_app/widgets/appbar_action_view.dart';
 import 'package:vbt_staj_ornek_app/widgets/bottom_nav_bar.dart';
 import 'package:vbt_staj_ornek_app/widgets/history_wallet.dart';
 import 'package:vbt_staj_ornek_app/widgets/icon_witget_view.dart';
+import 'package:vbt_staj_ornek_app/widgets/swiper_card.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -33,6 +34,7 @@ class _HomeState extends State<Home> {
             child: Column(
               children: [
                 //? Karlar Listesi
+                const SwiperCard(),
                 //*Icon Widget
                 const IconWidgetView(),
                 SizedBox(
