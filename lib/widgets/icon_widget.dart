@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vbt_staj_ornek_app/animation/fade_animation.dart';
 import 'package:vbt_staj_ornek_app/constants/app_constants.dart';
 
 class IconWidget extends StatelessWidget {
@@ -20,20 +21,26 @@ class IconWidget extends StatelessWidget {
       children: [
         InkWell(
           onTap: () {},
-          child: Container(
-            width: 60,
-            height: 60,
-            decoration: BoxDecoration(
-              color: color,
-              borderRadius: BorderRadius.circular(40),
+          child: FadeAnimation(
+            delay: delayananimation,
+            child: Container(
+              width: 60,
+              height: 60,
+              decoration: BoxDecoration(
+                color: color,
+                borderRadius: BorderRadius.circular(40),
+              ),
+              child: child,
             ),
-            child: child,
           ),
         ),
         SizedBox(height: ApplicationConstants.sizeHeight(context, 0.01)),
-        Text(
-          title,
-          style: const TextStyle(color: Colors.grey),
+        FadeAnimation(
+          delay: delayananimation,
+          child: Text(
+            title,
+            style: const TextStyle(color: Colors.grey),
+          ),
         ),
       ],
     );

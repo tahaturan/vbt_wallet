@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vbt_staj_ornek_app/animation/fade_animation.dart';
 import 'package:vbt_staj_ornek_app/constants/app_constants.dart';
 import 'package:vbt_staj_ornek_app/widgets/appbar_action_view.dart';
 import 'package:vbt_staj_ornek_app/widgets/bottom_nav_bar.dart';
@@ -21,7 +22,7 @@ class _HomeState extends State<Home> {
         backgroundColor: ApplicationConstants.primaryBackgroudColor,
         elevation: 0,
         actions: const [
-          AppBarActionsView(),
+          FadeAnimation(delay: 1, child: AppBarActionsView()),
         ],
       ),
       body: SingleChildScrollView(
